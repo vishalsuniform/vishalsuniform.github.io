@@ -616,6 +616,12 @@
   </style>
 </head>
 <body>
+  <script>
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.hash.substring(1));
+  }
+</script>
+
   <!-- INTERNAL LINKS START -->
 <a href="/hospital-uniform">Hospital Uniforms</a>
 <a href="/healthcare-uniform">Healthcare Uniforms</a>
@@ -3784,6 +3790,7 @@ document.addEventListener('keydown', (e) => {
   
 </body>
 </html>
+
 
 
 
