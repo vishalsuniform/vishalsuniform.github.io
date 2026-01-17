@@ -27,25 +27,21 @@
     "description": "Security uniform manufacturer supplying guard uniforms, bouncer uniforms and security staff uniforms across India."
   }
   </script>
-.uniform-gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin: 20px 0;
-}
-
-.uniform-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* Mobile friendly */
-@media (max-width: 768px) {
-  .uniform-gallery {
-    grid-template-columns: repeat(2, 1fr);
+  <style>
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
   }
-}
+
+  .product-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+</style>
 </head>
 
 <body>
