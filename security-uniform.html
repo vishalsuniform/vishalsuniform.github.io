@@ -27,7 +27,25 @@
     "description": "Security uniform manufacturer supplying guard uniforms, bouncer uniforms and security staff uniforms across India."
   }
   </script>
+.uniform-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
 
+.uniform-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  .uniform-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 </head>
 
 <body>
@@ -51,12 +69,23 @@ neat professional appearance.
 <h3>Professional Security Guard Uniforms for All Industries</h3>
 
 <!-- IMAGE SEO START (NO VISUAL CHANGE) -->
-<img src="https://raw.githubusercontent.com/020304-keshav/Vishals-uniform-images/main/SECURITY%20SHIRTS%26BLOUSES.jpeg?raw=true"
-<img src="images/security-uniform-2.jpg" alt="Male security guard uniform supplied across Telangana">
-<img src="images/security-uniform-3.jpg" alt="Female security guard uniform manufacturer in India">
-<img src="images/security-uniform-4.jpg" alt="Bouncer and security staff uniforms for companies in India">
-<img src="images/security-uniform-5.jpg" alt="Customized security guard uniforms for private agencies">
-<img src="images/security-uniform-6.jpg" alt="Durable security uniforms for long working hours">
+<!-- IMAGES START -->
+<div class="product-grid">
+
+  <img src="https://raw.githubusercontent.com/020304-keshav/Vishals-uniform-images/main/SECURITY%20SHIRTS%26BLOUSES.jpeg?raw=true"
+       alt="Security Shirts and Blouses Manufacturer in Hyderabad">
+
+  <img src="https://raw.githubusercontent.com/020304-keshav/Vishals-uniform-images/main/SECURITY%20JACKETS%26COATS.jpeg?raw=true"
+       alt="Security Jackets and Coats Supplier in India">
+
+  <img src="https://raw.githubusercontent.com/020304-keshav/Vishals-uniform-images/main/SECURITY%20UNIFORM%20SETS.jpeg?raw=true"
+       alt="Complete Security Guard Uniform Sets">
+
+  <img src="https://raw.githubusercontent.com/020304-keshav/Vishals-uniform-images/main/SPECIALIZED%20SECURITY.jpeg?raw=true"
+       alt="Specialized Security Uniforms for Industrial and Corporate Use">
+
+</div>
+<!-- IMAGES END -->
 <!-- IMAGE SEO END -->
 
 <h3>Security Uniform Supplier in Telangana & India</h3>
